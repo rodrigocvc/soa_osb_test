@@ -92,7 +92,7 @@ A Api do Broker só retorna o valor da diária sendo assim precisamos pegar esse
 
 **Checkin dia: 20/05/2017, Checkout dia: 25/05/2017, Total de Adultos: 2 com 1 Criança**
 
-### Considerando as datas acima o cliente gostaria de ficar 5 dias no hotel, sendo assim calculamos o valor total da viagem da seguinte forma:
+***Considerando as datas acima o cliente gostaria de ficar 5 dias no hotel, sendo assim calculamos o valor total da viagem da seguinte forma:***
 
 Vamos supor que o valor retornado pela API foi Valor do broker R$ 100,00 para adulto e R$ 50,00 para criança:
   1. Pegar a quantidade de dias e multiplicar pelo valor do Adulto
@@ -101,6 +101,7 @@ Vamos supor que o valor retornado pela API foi Valor do broker R$ 100,00 para ad
     * Formula para fazer isso ***({valorViagemAdulto}/0.7)*** Ex: (500/0.7);
   4. Somar tudo e você terá o ***totalPrice***
 
+###Detalhes do serviço
 **URL: Construa a URL como achar melhor
 **Method: GET**
 
