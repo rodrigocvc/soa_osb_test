@@ -94,7 +94,7 @@ A Api do Broker só retorna o valor da diária sendo assim precisamos pegar esse
 
 ***Considerando as datas acima o cliente gostaria de ficar 5 dias no hotel, sendo assim calculamos o valor total da viagem da seguinte forma:***
 
-Vamos supor que o valor retornado pela API foi Valor do broker R$ 100,00 para adulto e R$ 50,00 para criança:
+Vamos supor que o valor retornado pela API do broker foi R$ 100,00 para adulto e R$ 50,00 para criança:
   1. Pegar a quantidade de dias e multiplicar pelo valor do Adulto
   2. Pegar a quantidade de dias e multiplicar pelo valor do Criança
   3. Adicionar 30% de comissão para adulto e para criança
@@ -109,7 +109,7 @@ Vamos supor que o valor retornado pela API foi Valor do broker R$ 100,00 para ad
 1. CityCode
 2. Checkin
 3. Checkout
-4. Quantidade de adultos
+4. Quantidade de Adultos
 5. Quantidade de Crianças
 
 **Resposta do Serviço**
