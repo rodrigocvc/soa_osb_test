@@ -25,7 +25,7 @@ Nosso parceiro irá disponibilizar uma api de consulta de hoteis por cidade:
 
 1. ***1032*** (Porto Seguro)
 2. ***7110*** (Rio de Janeiro)
-3. ***1032*** (São Paulo)
+3. ***9626*** (São Paulo)
 
 ***Exemplo:***
 > **URL: https://cvcbackendhotel.herokuapp.com/hotels/avail/1032**
