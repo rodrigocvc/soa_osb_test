@@ -171,7 +171,7 @@ O Hotel ID é o ID do serviço retornado na url:
 
 Lembre do que falamos na entrevista a que a CVC presa muito a ***VELOCIDADE*** e qualquer segundo é importante, sendo assim te damos alguns conselhos:
 >1. Construa uma API com o máximo de performance possível
->2. Tente utilizar algum dos processos paralelo assim você pode ganhar tempo na resposta. ;-)
+>2. Tente executar algum dos processos em paralelo assim você pode ganhar tempo na resposta. ;-)
 
 Construa os dois serviço e faça o deploy em um repositório GitHub ou nos envie por e-mail.
 
