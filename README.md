@@ -84,7 +84,7 @@ Ele também irá disponibilizar uma api para busca os detalhes do Hotel pelo seu
 Nosso frontend não faz nenhuma regra de negócio, sendo assim precisamos que o serviço já traga o valor da viagem do passageiro para ser exibida.
 
 1. Construa uma API Rest no barramento Oracle 12C com a arquitetura que achar melhor:
-2. O serviço do broker retorna apenas o valor por dia sendo assim precisamos calcular o valor total da viagem adicionar a comissão da CVC para cada um dos quartos retornados
+2. O serviço do broker retorna apenas o valor por dia sendo assim precisamos calcular o valor total da viagem e adicionar a comissão da CVC para cada um dos quartos retornados
 
 **Detalhes de como calcular o valor total da viagem**
 
