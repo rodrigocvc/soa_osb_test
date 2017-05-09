@@ -101,7 +101,7 @@ Vamos supor que o valor retornado pela API foi Valor do broker R$ 100,00 para ad
     * Formula para fazer isso ***({valorViagemAdulto}/0.7)*** Ex: (500/0.7);
   4. Somar tudo e você terá o ***totalPrice***
 
-###Detalhes do serviço
+### Detalhes do serviço
 **URL: Construa a URL como achar melhor**
 **Method: GET**
 
