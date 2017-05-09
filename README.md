@@ -139,7 +139,7 @@ Construir um serviço que retorne os detalhes do hotel utilizando a mesma regra 
 
 Utilizar o serviço ***"Detalhes do Hotel por código de hotel"*** descrito na explicação acima.
 
-**URL: Construa a URL como achar melhor
+**URL: Construa a URL como achar melhor**
 **Method: GET**
 
 ***Parametros obrigatórios:***
