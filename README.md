@@ -102,7 +102,7 @@ Vamos supor que o valor retornado pela API foi Valor do broker R$ 100,00 para ad
   4. Somar tudo e você terá o ***totalPrice***
 
 ###Detalhes do serviço
-**URL: Construa a URL como achar melhor
+**URL: Construa a URL como achar melhor**
 **Method: GET**
 
 ***Parametros obrigatórios:***
