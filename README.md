@@ -1,19 +1,19 @@
 # Teste API
 
 
-O teste é simples porém prático, pois você verá muito disso caso você seja em nosso ambiente de trabalho.
+O teste é simples porém prático, pois você verá muito disso caso você venha a participar do nosso ambiente de trabalho.
 
 # Descrição do Teste
 
 Vamos supor que necessitamos realizar uma conexão com um novo broker de hotéis, que é um parceiro de negócio e possui um webservice onde expõe a sua API.
 
-Porem não gostaríamos que nosso frontend bata diretamente nesse broker, por questões de segurança.
+Porém não gostaríamos que nosso front-end bata diretamente nesse broker, por questões de segurança.
 
 Sendo assim precisamos que você construa uma API para intermediar o acesso entre nosso front-end e o broker.
 
 ### API do nosso parceiro:
 
-Nosso parceiro irá disponibilizar uma API de consulta de hoteis por cidade:
+Nosso parceiro irá disponibilizar uma API de consulta de hotéis por cidade:
 
 **Descrição da API**
 
@@ -50,7 +50,7 @@ Nosso parceiro irá disponibilizar uma API de consulta de hoteis por cidade:
 }]
 ```
 
-Ele também irá disponibilizar uma API para busca os detalhes do Hotel pelo seu código:
+Ele também irá disponibilizar uma API para buscar os detalhes do Hotel pelo seu código:
 
 **URL: https://cvcbackendhotel.herokuapp.com/hotels/{ID_Do_Hotel}**
 
@@ -88,7 +88,7 @@ Nosso front-end não faz nenhuma regra de negócio, sendo assim precisamos que o
 
 **Detalhes de como calcular o valor total da viagem**
 
-A API do Broker só retorna o valor da diária sendo assim precisamos pegar esse valor e calcular os dias que o cliente gostaria de ficar ex:
+A API do broker só retorna o valor da diária sendo assim precisamos pegar esse valor e calcular os dias que o cliente gostaria de ficar ex:
 
 **Checkin dia: 20/05/2017, Checkout dia: 25/05/2017, Total de Adultos: 2 com 1 Criança**
 
