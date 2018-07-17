@@ -1,4 +1,4 @@
-# Teste back-end developer(API)
+# Teste back-end developer
 
 
 O teste é simples porém prático, pois você verá muito disso caso você venha a participar do nosso ambiente de trabalho.
