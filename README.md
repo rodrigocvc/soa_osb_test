@@ -97,7 +97,7 @@ A API do broker só retorna o valor da diária sendo assim precisamos pegar esse
 Vamos supor que o valor retornado pela API do broker foi R$ 100,00 para adulto e R$ 50,00 para criança:
   1. Pegar a quantidade de dias e multiplicar pelo valor do Adulto
   2. Pegar a quantidade de dias e multiplicar pelo valor do Criança
-  3. Adicionar 30% de comissão para adulto e para criança
+  3. Adicionar a comissão de .70 para adulto e para criança
     * Formula para fazer isso ***({valorViagemAdulto}/0.7)*** Ex: (500/0.7);
   4. Somar tudo e você terá o ***totalPrice***
 
