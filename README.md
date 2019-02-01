@@ -95,11 +95,13 @@ A API do broker só retorna o valor da diária sendo assim precisamos pegar esse
 ***Considerando as datas acima o cliente gostaria de ficar 5 dias no hotel, sendo assim calculamos o valor total da viagem da seguinte forma:***
 
 Vamos supor que o valor retornado pela API do broker foi R$ 100,00 para adulto e R$ 50,00 para criança:
-  1. Pegar a quantidade de dias e multiplicar pelo valor do Adulto
-  2. Pegar a quantidade de dias e multiplicar pelo valor do Criança
-  3. Adicionar a comissão de .70 para adulto e para criança
-    * Formula para fazer isso ***({valorViagemAdulto}/0.7)*** Ex: (500/0.7);
-  4. Somar tudo e você terá o ***totalPrice***
+  1. Pegar valor do Adulto e multiplicar pela quantidade de adultos da reserva
+  2. Pegar valor da Criança e multiplicar pela quantidade de Crianças da reserva
+  3. Pegar a quantidade de dias e multiplicar pelo valor do item 1
+  4. Pegar a quantidade de dias e multiplicar pelo valor do item 2
+  5. Adicionar a comissão de .70 para os itens 3 e 4
+    * Formula para fazer isso ***({valorViagemAdulto}/0.7)*** Ex: (1000/0.7);
+  6. Somar os valores resultantes do item 5 e você terá o ***totalPrice***
 
 ### Detalhes do serviço
 **URL: Construa a URL como achar melhor**
@@ -114,8 +116,6 @@ Vamos supor que o valor retornado pela API do broker foi R$ 100,00 para adulto e
 
 **Resposta do Serviço**
 
-Obs.: Todos os valores retornados por esse serviço são adicionados o valor de comissão.
-
 ```json
 {
   "id": 1,
@@ -123,9 +123,9 @@ Obs.: Todos os valores retornados por esse serviço são adicionados o valor de 
   "rooms":[{
       "roomID": 1,
       "categoryName": "Standard",
-      "totalPrice": 10000.00,
+      "totalPrice": 1785.71,
       "priceDetail": {
-        "pricePerDayAdult": 500.00,
+        "pricePerDayAdult": 100.00,
         "pricePerDayChild": 50.00
       }
     }]
@@ -144,9 +144,16 @@ Utilizar o serviço ***"Detalhes do Hotel por código de hotel"*** descrito na e
 
 ***Parametros obrigatórios:***
 1. HotelID
+2. Checkin
+3. Checkout
+4. Quantidade de Adultos
+5. Quantidade de Crianças
 
 O Hotel ID é o ID do serviço retornado na url:
 > **https://cvcbackendhotel.herokuapp.com/hotels/avail/1032**
+
+***Exemplo:***
+> **URL: https://cvcbackendhotel.herokuapp.com/hotels/1**
 
 **Resposta do Serviço**
 
@@ -157,9 +164,9 @@ O Hotel ID é o ID do serviço retornado na url:
   "rooms":[{
       "roomID": 1,
       "categoryName": "Standard",
-      "totalPrice": 10000.00,
+      "totalPrice": 1785.71,
       "priceDetail": {
-        "pricePerDayAdult": 500.00,
+        "pricePerDayAdult": 100.00,
         "pricePerDayChild": 50.00
       }
     }]
@@ -169,12 +176,12 @@ O Hotel ID é o ID do serviço retornado na url:
 
 # Observações
 
-Estamos falando de uma aplicação de alta disponibilidade, com isso presamos muito a ***VELOCIDADE*** e qualquer segundo é importante, sendo assim te damos alguns conselhos:
+Estamos falando de uma aplicação de alta disponibilidade, com isso prezamos muito a ***VELOCIDADE*** e qualquer segundo é importante, sendo assim te damos alguns conselhos:
 >1. Construa uma API com o máximo de performance possível
->2. Tente executar algum dos processos em paralelo assim você pode ganhar tempo na resposta. ;-)
+>2. Tente executar alguns dos processos em paralelo assim você pode ganhar tempo na resposta. :wink:
 
 Construa os dois serviço e faça o deploy em um repositório GitHub ou nos envie por e-mail.
 
 Qualquer dúvida nos avise.
 
-# Muito Boa Sorte e estamos ansiosos para receber seu código.
+# Muito Boa Sorte e estamos ansiosos para receber seu código!
