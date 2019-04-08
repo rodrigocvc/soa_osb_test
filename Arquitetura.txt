@@ -1,0 +1,1 @@
+Neste teste foi utilizado Spring Boot + Spring MVC + Spring WS + Swagger + Gradle + Intellij
